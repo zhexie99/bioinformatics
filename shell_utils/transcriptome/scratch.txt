@@ -1,0 +1,25 @@
+----------------------------------------------------------
+FOR HISAT@ ALIGNEMENT, TAKE INTO CONSIDERATION READ GROUPS
+----------------------------------------------------------
+
+### --- INPUT --- ###
+@HISEQ:86:H0NDCADXX:2:1102:12271:16489 1:N:0:CGATGT
+
+ID is read group identifier, composed of flowcell name and lane number
+H0NDCADXX.2
+
+PU is the platform unit, ocmposed of the flowcell name, lane number and sample name
+H0NDCADXX.2.1
+
+SM is the sample name, here the sample name is 1
+1
+
+PL is the platform
+PL:ILLUMINA
+
+LB is the name of the DNA preparation library, composed of the sample name and index sequence used for the reads during multiplex sequencing
+1_CGATGT
+
+### --- OUTPUT --- ###
+--rg ID:XX.L001 --rg SM:1 --rg PL:ILLUMINA --rg LB:lib501 --rg PU:XX.1.NoIndex 
+
